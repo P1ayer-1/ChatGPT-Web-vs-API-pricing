@@ -118,6 +118,10 @@ def plot_overall_cost_summary(final_user_cost, final_chatgpt_cost):
 
 
 def plot_costs_for_all_time_frames(cost_data, time_frames):
+
+    # reverse time frame ordering
+    time_frames = list(time_frames)[::-1]
+
     user_costs = [cost_data[tf][0] for tf in time_frames]
     chatgpt_costs = [cost_data[tf][1] for tf in time_frames]
     total_costs = [cost_data[tf][2] for tf in time_frames]
