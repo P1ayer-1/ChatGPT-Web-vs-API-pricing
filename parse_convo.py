@@ -22,7 +22,6 @@ import unicodedata
 import json
 import re
 from datetime import datetime
-from pathlib import Path
 from utils import read_file
 
 
